@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, cum labore? Quidem alias, nam qui ullam architecto error amet nobis iure voluptas ipsam sit odit asperiores exercitationem magnam accusamus at!</p>
+    
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, at debitis explicabo repellat earum est, error vel tempora voluptatem incidunt quos, ad officia? Itaque quaerat delectus fugit rem sint nulla. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat ducimus sunt libero dicta recusandae laudantium veritatis eaque. Iste eveniet consequatur maxime repellendus harum possimus exercitationem odio voluptates vel, aperiam nulla.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>"  frameborder="0">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim hic expedita velit veritatis nihil dolore magni voluptate architecto, ab quo debitis laboriosam pariatur voluptas facilis modi eaque, commodi sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, enim esse eligendi quod vel a? Atque, iure amet deserunt nihil quaerat, eius alias praesentium beatae laudantium nulla ipsa! Ab, accusamus!</p>
+</body>
+</html>
