@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #4d06a8;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            padding-top: 250px;
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="submit"] {
+            background-color: #4d06a8;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100px;
+            margin: auto;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4d06a8;
+            outline: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <div>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <label for="name">Nome:</label>
+            <input type="text" name="nome" id="name" placeholder="Digite seu nome" required>
+            <br><br>
+            <label for="sobrename">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrename" placeholder="Digite seu sobrenome" required>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
