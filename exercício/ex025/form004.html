@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #4d06a8;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+
+        form{
+            background-color: white;
+            padding: 1px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+            & div {
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                width: 100%;
+                max-width: 400px;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            & legend {
+                font-size: 20px;
+                margin-bottom: 10px;
+                color:#3c0080;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px;
+                text-shadow: #000000 1px 1px 0px;
+            }
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            padding: 5px;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"]{
+            background-color: #4d06a8;
+            color: white;
+            border: none;
+            padding: 17px 40px;
+            border-radius: 50px;
+            border: 0;
+            box-shadow: #0000000d 0 0 8px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-size: 15px;
+            transition: all 0.5s ease;
+            width: 50%;
+            margin: auto;
+            
+        }
+
+        input[type="submit"]:hover{
+            letter-spacing: 3px;
+            background-color: #3c0080;
+            color: #fff;
+            box-shadow: #6f00ff 0px 7px 29px 0px;
+            transform: scale(1.05);
+        }
+
+        input[type="submit"]:active {
+            letter-spacing: 3px;
+            background-color: #6f00ff;
+            color: #fff;
+            box-shadow: #6f00ff 0px 0px 0px 0px;
+            transform: translateY(10px);
+            transition: 100ms;
+        }
+
+        input[type="reset"]{
+            background-color: #4d06a8;
+            color: white;
+            border: none;
+            padding: 17px 40px;
+            border-radius: 50px;
+            border: 0;
+            box-shadow: #0000000d 0 0 8px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-size: 15px;
+            transition: all 0.5s ease;
+            width: 50%;
+            margin: auto;
+            margin-top: 20px;
+            
+        }
+
+        input[type="reset"]:hover{
+            letter-spacing: 3px;
+            background-color: #3c0080;
+            color: #fff;
+            box-shadow: #6f00ff 0px 7px 29px 0px;
+            transform: scale(1.05);
+        }
+
+        input[type="reset"]:active {
+            letter-spacing: 3px;
+            background-color: #6f00ff;
+            color: #fff;
+            box-shadow: #6f00ff 0px 0px 0px 0px;
+            transform: translateY(10px);
+            transition: 100ms;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </div>
+            <div>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" autocomplete="email" required>
+            </div>
+            <div>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+            </div>
+            <!-- Estudar mais sobre RegEx -->
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
