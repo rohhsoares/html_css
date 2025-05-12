@@ -51,6 +51,7 @@ menu a {
     background-color: rgba(5, 8, 172, 0.979);
     color: white;
     border-top: 2px solid black;
+    font-weight: bold;
 }
 
 menu a:hover {

@@ -6,3 +6,12 @@ function clickMenu() {
         itens.style.display = "block";
     }
 }
+
+function resize() {
+    if(window.innerWidth >= 7687){
+        itens.style.display = "block";
+    }
+    else {
+        itens.style.display = "none";
+    }
+}
