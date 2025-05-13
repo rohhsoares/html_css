@@ -1,0 +1,55 @@
+/*
+Paleta de cores: 
+
+#4fbee0
+#69d0f3
+#35acce
+#1a99bb
+#0087a8
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-image: radial-gradient( circle,#fff, #4fbee0, #69d0f3, #35acce, #1a99bb, #0087a8);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: #fff;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+
+    & #image {
+        background: #35acce url(imagem/esqueceu-a-ilustracao-do-conceit.png) no-repeat;
+        background-size: cover;
+        height: 200px;
+    }
+
+    & #form {
+        display: block;
+        padding: 10px;
+    }
+}
+
