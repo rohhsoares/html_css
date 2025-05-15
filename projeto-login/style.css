@@ -16,9 +16,10 @@ Paleta de cores:
 }
 
 body, html {
-    background-image: radial-gradient( circle,#fff, #4fbee0, #69d0f3, #35acce, #1a99bb, #0087a8);
+    background-image: radial-gradient( circle,#7a60dd,#6550ca,#5140b8,#3c30a5,#272092);
     height: 100vh;
     width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -35,14 +36,14 @@ main {
     overflow: hidden;
     background-color: #fff;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 
     & #image {
-        background: #35acce url(imagem/esqueceu-a-ilustracao-do-conceit.png) no-repeat;
+        background: url(imagem/wordpress-login.webp) no-repeat center;
         background-size: cover;
         height: 200px;
     }
@@ -53,3 +54,84 @@ main {
     }
 }
 
+#form h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #272092;
+}
+
+#form p {
+    font-size: 0.8em;
+}
+
+.camp {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 13px 20px;
+
+    & input {
+        padding: 4px;
+        border-radius: 50px;
+        border: 1px solid #3c30a5;
+    }
+
+}
+
+input:focus-within{
+    background-color: #8b848425;
+}
+
+input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 24px;
+    background-color: #3c30a5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #6550ca;
+    transition: .5s;
+    box-shadow: 0px 0px 10px #272092;
+    transition-timing-function: ease; /* velocidade da transição */
+    transform: scale(1.05); /* aumenta o tamanho do botão */
+    transition: transform 0.3s;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    margin-top: 10px;
+    background-color: #3c30a5;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+
+    & i {
+        font-size: 0.8em;
+    }
+
+    & p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.button:hover{
+    background-color: #6550ca;
+    transition: .5s;
+    box-shadow: 0px 0px 10px #272092;
+    transition-timing-function: ease;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
